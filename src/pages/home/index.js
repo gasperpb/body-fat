@@ -47,7 +47,9 @@ export default function BodyFatCalculator() {
 
   return (
     <>
+      {" "}
       <div class="grid place-items-center h-screen p-5 rounded-lg bg-#F3FCFF p-4 ">
+        <h2> CALCULADORA DE PORCENTAGEM</h2>
         <div className="bg-[#F3FCFF] w-[830px] h-[442px]  flex items-center justify-center rounded-lg ">
           <form onSubmit={handleSubmit} className="grid grid-cols-2 gap-4">
             <label>
@@ -92,10 +94,12 @@ export default function BodyFatCalculator() {
           </form>
         </div>
       </div>
-      <div class="col-span-12 bg-white border border-gray-300 p-5 mt-2.5">
+      <div class="col-span-12 bg-white border border-gray-300 p-5 mt-2.5 px-4 mx-8 s shadow">
         <div class="col s12">
           <h2>
-            <strong>Calculadora de gordura corporal</strong>
+            <strong class="cor-font p-7">
+              Calculadora de gordura corporal
+            </strong>
           </h2>
           <p>
             Quer saber quanta gordura seu corpo possui? Esta calculadora de
@@ -106,7 +110,7 @@ export default function BodyFatCalculator() {
             sexo, peso, cintura e quadris e calcular gordura corporal com apenas
             um clique.
           </p>
-          <h3>
+          <h3 class="p-7">
             <strong>
               VOCÊ ESTÁ EM SUA MISSÃO DE PERDA DE PESO OU PERDA DE GORDURA?
             </strong>
@@ -128,7 +132,7 @@ export default function BodyFatCalculator() {
             mas também manterá você motivado e energético.
           </p>
           <h2>
-            <strong>O que é gordura corporal?</strong>
+            <strong class="cor-font p-7">O que é gordura corporal?</strong>
           </h2>
           <p>
             Antes de calcular o percentual de gordura ideal corporal, você
@@ -160,7 +164,9 @@ export default function BodyFatCalculator() {
             calcular a gordura corporal usando esta calculo de gordura corporal.
           </p>
           <h2>
-            <strong>Como calcular a gordura corporal?</strong>
+            <strong class="cor-font p-7">
+              Como calcular a gordura corporal?
+            </strong>
           </h2>
           <p>
             Agora, como você sabe o que é gordura corporal, pode estar
@@ -199,7 +205,9 @@ export default function BodyFatCalculator() {
             cálculos manuais.
           </p>
           <h2>
-            <strong>Percentual normal de gordura corporal</strong>
+            <strong class="cor-font p-7">
+              Percentual normal de gordura corporal
+            </strong>
           </h2>
           <p>
             Agora você sabe como determinar o percentual de gordura ideal
@@ -219,7 +227,9 @@ export default function BodyFatCalculator() {
             corporal de mulheres e homens que postamos abaixo:
           </p>
           <h2>
-            <strong>Por que calcular a porcentagem de gordura corporal?</strong>
+            <strong class="cor-font p-7">
+              Por que calcular a porcentagem de gordura corporal?
+            </strong>
           </h2>
           <p>
             Você sabe muito bem como calcular o percentual de gordura corporal
