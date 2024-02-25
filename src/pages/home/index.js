@@ -46,43 +46,52 @@ export default function BodyFatCalculator() {
   };
 
   return (
-    <form onSubmit={handleSubmit} class="grid gap-6 mb-6 md:grid-cols-2">
-      <label>
-        Gênero:
-        <select id="genero">
-          <option value="masculino">Masculino</option>
-          <option value="feminino">Feminino</option>
-        </select>
-      </label>
-      <div>
-        <label class="p-5">
-          Peso:
-          <input type="number" id="peso" />
-        </label>
+    <>
+      <div class="grid place-items-center h-screen p-5 rounded-lg bg-#F3FCFF p-4 ">
+        <div className="bg-[#F3FCFF] w-[830px] h-[442px]  flex items-center justify-center rounded-lg ">
+          <form onSubmit={handleSubmit} className="grid grid-cols-2 gap-4">
+            <label>
+              Gênero:
+              <select id="genero">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+              </select>
+            </label>
+            <label>
+              Peso:
+              <input type="number" id="peso" />
+            </label>
+            <label>
+              Cintura:
+              <input type="number" id="cintura" />
+            </label>
+            <label>
+              Pescoço:
+              <input type="number" id="pescoco" />
+            </label>
+            <label>
+              Quadril:
+              <input type="number" id="quadril" />
+            </label>
+            <label>
+              Altura:
+              <input type="number" id="altura" />
+            </label>
+            <label>
+              Idade:
+              <input type="number" id="idade" />
+            </label>
+            <button type="submit" className="col-span-2">
+              Calcular
+            </button>
+            {bodyFat !== null && (
+              <p className="col-span-2">
+                Percentual de gordura corporal: {bodyFat}%
+              </p>
+            )}
+          </form>
+        </div>
       </div>
-      <label>
-        Cintura:
-        <input type="number" id="cintura" />
-      </label>
-      <label>
-        Pescoço:
-        <input type="number" id="pescoco" />
-      </label>
-      <label>
-        Quadril:
-        <input type="number" id="quadril" />
-      </label>
-      <label>
-        Altura:
-        <input type="number" id="altura" />
-      </label>
-      <label>
-        Idade:
-        <input type="number" id="idade" />
-      </label>
-      <button type="submit">Calcular</button>
-      {bodyFat !== null && <p>Percentual de gordura corporal: {bodyFat}%</p>}
-
       <div class="col-span-12 bg-white border border-gray-300 p-5 mt-2.5">
         <div class="col s12">
           <h2>
@@ -239,6 +248,6 @@ export default function BodyFatCalculator() {
           </p>
         </div>
       </div>
-    </form>
+    </>
   );
 }
